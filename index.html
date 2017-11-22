@@ -5,16 +5,8 @@
 
 </head>
 <body>
- 	<nav>
-	  <a href="index.html">Color</a>
-	  <a href="size.html">Size</a>
-	</nav> 
-
-	<h1>Get your own color!</h1>
-
-
 	<script>
-		function functionasd() {
+		function updatecolor() {
 			var redvalue = document.getElementById('redrange').value
 			var greenvalue = document.getElementById('greenrange').value
 			var bluevalue = document.getElementById('bluerange').value
@@ -27,6 +19,13 @@
 		};
 
 	</script>
+
+ 	<nav>
+	  <a href="index.html">Color</a>
+	  <a href="size.html">Size</a>
+	</nav> 
+
+	<h1>Get your own color!</h1>
 
 	<form>
 		<input id="redrange" type="range" name="red" value="127" min="0" max="255"
@@ -44,8 +43,10 @@
 		<input id="numblue" type="number" name="numblue" value="127" min="0" max="255" 
 		onclick="document.getElementById('bluerange').value = document.getElementById('numblue').value"> Blue<br>
 
-		<button type = "button" name = "getcolor" onclick="functionasd()">Get color</button>
+		<button type = "button" name = "getcolor" onclick="updatecolor()">Get color</button>
 	</form>
+
+	<br>
 	
 	<div id="colorbox"></div>
 	

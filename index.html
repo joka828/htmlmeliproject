@@ -6,10 +6,8 @@
 </head>
 <body>
  	<nav>
-	  <a href="index.html/">Color</a>
+	  <a href="index.html">Color</a>
 	  <a href="size.html">Size</a>
-	  <a href="/js/">JavaScript</a>
-	  <a href="/jquery/">jQuery</a>
 	</nav> 
 
 	<h1>Get your own color!</h1>
@@ -22,8 +20,10 @@
 			var bluevalue = document.getElementById('bluerange').value
 
 			document.getElementById('colorbox').style.backgroundColor = 'rgb(' + redvalue + ',' + greenvalue + ',' + bluevalue + ')';	
+			document.getElementById('colorbox').style.height = '100px'
+			document.getElementById('colorbox').style.width = '500px'
 
-			alert(redvalue + " " + greenvalue  + " " + bluevalue);
+			//alert(redvalue + " " + greenvalue  + " " + bluevalue);
 		};
 
 	</script>
@@ -47,7 +47,7 @@
 		<button type = "button" name = "getcolor" onclick="functionasd()">Get color</button>
 	</form>
 	
-	<div id="colorbox" heigth = "100px" width = "100px"></div>
+	<div id="colorbox"></div>
 	
 	
 </body>

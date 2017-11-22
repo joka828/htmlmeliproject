@@ -21,7 +21,9 @@
 			var greenvalue = document.getElementById('greenrange').value
 			var bluevalue = document.getElementById('bluerange').value
 
-			alert(redvalue + " " + greenvalue  + " " + bluevalue)
+			document.getElementById('colorbox').style.backgroundColor = 'rgb(' + redvalue + ',' + greenvalue + ',' + bluevalue + ')';	
+
+			alert(redvalue + " " + greenvalue  + " " + bluevalue);
 		};
 
 	</script>
@@ -34,7 +36,7 @@
 
 		<input id="greenrange" type="range" name="green" value="127" min="0" max="255" 
 		onclick="document.getElementById('numgreen').value = document.getElementById('greenrange').value">
-		<input name="numgreen" type="number" name="numgreen" value="127" min="0" max="255" 
+		<input id="numgreen" type="number" name="numgreen" value="127" min="0" max="255" 
 		onclick="document.getElementById('greenrange').value = document.getElementById('numgreen').value"> Green<br>
 
 		<input id="bluerange" type="range" name="blue" value="127" min="0" max="255"
@@ -45,7 +47,7 @@
 		<button type = "button" name = "getcolor" onclick="functionasd()">Get color</button>
 	</form>
 	
-	<div id="colorx" heigth = "10px" heigth = 10px style="background-color:rgb(255, 99, 71)"></div>
+	<div id="colorbox" heigth = "100px" width = "100px"></div>
 	
 	
 </body>

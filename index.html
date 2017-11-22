@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-	<script>
-		asdasdsad
-
-		qweqweqwe
-	</script>
+	
 
 </head>
-<html>
 <body>
  	<nav>
-	  <a href="/index.html/">Color</a>
-	  <a href="/size.html/">Size</a>
+	  <a href="index.html/">Color</a>
+	  <a href="size.html/">Size</a>
 	  <a href="/js/">JavaScript</a>
 	  <a href="/jquery/">jQuery</a>
 	</nav> 
 
 	<h1>Get your own color!</h1>
+
+
+	<script>
+		function functionasd() {
+			var redvalue = document.getElementById('redrange').value
+			var greenvalue = document.getElementById('greenrange').value
+			var bluevalue = document.getElementById('bluerange').value
+
+			alert(redvalue + " " + greenvalue  + " " + bluevalue)
+		};
+
+	</script>
 
 	<form>
 		<input id="redrange" type="range" name="red" value="127" min="0" max="255">
@@ -25,14 +32,14 @@
 		onclick="document.getElementById('redrange').value = document.getElementById('numred').value"> Red<br>
 
 		<input id="greenrange" type="range" name="green" value="127" min="0" max="255">
-		<input name="numgreen" type="number" name="numgreen" value="127"min="0" max="255"
-		onclick="document.getElementById('redrange').value = document.getElementById('numgreen').value"> Green<br>
+		<input name="numgreen" type="number" name="numgreen" value="127" min="0" max="255" 
+		onclick="document.getElementById('greenrange').value = document.getElementById('numgreen').value"> Green<br>
 
 		<input id="bluerange" type="range" name="blue" value="127" min="0" max="255">
-		<input id="numblue" type="number" name="numblue" value="127" min="0" max="255"
-		onclick="document.getElementById('redrange').value = document.getElementById('numblue').value"> Blue<br>
+		<input id="numblue" type="number" name="numblue" value="127" min="0" max="255" 
+		onclick="document.getElementById('bluerange').value = document.getElementById('numblue').value"> Blue<br>
 
-		<button type = "button" name = "getcolor" onclick="alert('asd')">Get color</button>
+		<button type = "button" name = "getcolor" onclick="functionasd()">Get color</button>
 	</form>
 	
 	<div id="colorx" heigth = "10px" heigth = 10px style="background-color:rgb(255, 99, 71)"></div>

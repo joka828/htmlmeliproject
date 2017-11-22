@@ -8,22 +8,14 @@
 	  <a href="/jquery/">jQuery</a>
 	</nav> 
 
-	<h1>Get your own color!</h1>
+	<h1>Get size in pixels!</h1>
 
 	<form>
-		<input id="redrange" type="range" name="red" value="127" min="0" max="255">
-		<input id="numred" type="number" name="numred" value="127" min="0" max="255" 
-		onclick="document.getElementById('redrange').value = document.getElementById('numred').value"> Red<br>
-
-		<input id="greenrange" type="range" name="green" value="127" min="0" max="255">
-		<input name="numgreen" type="number" name="numgreen" value="127"min="0" max="255"
-		onclick="document.getElementById('redrange').value = document.getElementById('numgreen').value"> Green<br>
-
-		<input id="bluerange" type="range" name="blue" value="127" min="0" max="255">
-		<input id="numblue" type="number" name="numblue" value="127" min="0" max="255"
-		onclick="document.getElementById('redrange').value = document.getElementById('numblue').value"> Blue<br>
-
-		<button type = "button" name = "getcolor" onclick="alert('asd')">Get color</button>
+		<input id="sizerange" type="range" name="sizer" value="127" min="0" max="255"
+		onclick="document.getElementById('numsize').value = document.getElementById('sizerange').value">
+		<input id="numsize" type="number" name="numred" value="127" min="0" max="255" 
+		onclick="document.getElementById('sizerange').value = document.getElementById('numsize').value"> Size<br>
+		<button type = "button" name = "getcolor" onclick="alert('asd')">Get size</button>
 	</form>
 	
 	<div id="colorx" heigth = "10px" heigth = 10px style="background-color:rgb(255, 99, 71)"></div>

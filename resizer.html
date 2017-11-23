@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script>
+		function updatesize() {
+			document.getElementById('sizebox').style.backgroundColor = 'rgb(255,50,50)';
+			document.getElementById('sizebox').style.width = document.getElementById('numsize').value + 'px'
+			document.getElementById('sizebox').style.height = '10px'
+		};
+
+	</script>
+
+ 	<nav>
+	  <a href="index.html">Color</a>
+	  <a href="size.html">Size</a>
+	</nav>
+
+	<h1>Get size in pixels!</h1>
+
+  <div>
+  	<form>
+  		<input id="sizerange" type="range" name="sizer" value="127" min="0" max="1000"
+  		onchange="document.getElementById('numsize').value = document.getElementById('sizerange').value">
+  		<input id="numsize" type="number" name="numred" value="100" min="0" max="1000"
+  		onchange="document.getElementById('sizerange').value = document.getElementById('numsize').value"> Size<br>
+
+  		<button type = "button" name = "getsize" onclick="updatesize()">Get size (Width)</button>
+  	</form>
+  </div>
+
+
+	<div id="sizebox"></div>
+
+
+</body>
+</html>

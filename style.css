@@ -13,10 +13,17 @@ form{
 
 .inprange{
   width: 80%;
+  height: 100%;
+  margin: 0px;
 }
 
 .inpnum{
   width: 20%;
+  height: 100%;
+  border-width: 0px;
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: #00000000;
 }
 
 .separador{
@@ -27,8 +34,6 @@ form{
 }
 
 .selector{
-  position:relative;
-  top: 30px;
   width: 45%;
   height: 100%;
   float: left;

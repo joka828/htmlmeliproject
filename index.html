@@ -11,10 +11,6 @@
 			var bluevalue = document.getElementById('bluerange').value
 
 			document.getElementById('colorbox').style.backgroundColor = 'rgb(' + redvalue + ',' + greenvalue + ',' + bluevalue + ')';
-			//document.getElementById('colorbox').style.height = '100px'
-			//document.getElementById('colorbox').style.width = '500px'
-
-			//alert(redvalue + " " + greenvalue  + " " + bluevalue);
 		};
 
 	</script>
@@ -28,30 +24,32 @@
 	<div class = "wrapper">
 		<div class = "selector">
 			<form>
-				<div class="redbox">
-					<input id="redrange" type="range" name="red" value="127" min="0" max="255"
+				<div class="redbox box">
+					<input id="redrange" class="inprange" type="range" name="red" value="127" min="0" max="255"
 					onclick="document.getElementById('numred').value = document.getElementById('redrange').value">
-					<input id="numred" type="number" name="numred" value="127" min="0" max="255"
-					onclick="document.getElementById('redrange').value = document.getElementById('numred').value"> Red
+					<input id="numred" class="inpnum" type="number" name="numred" value="127" min="0" max="255"
+					onclick="document.getElementById('redrange').value = document.getElementById('numred').value">
 				</div>
 
-				<div class="greenbox">
-					<input id="greenrange" type="range" name="green" value="127" min="0" max="255"
+				<div class="greenbox box">
+					<input id="greenrange" class="inprange" type="range" name="green" value="127" min="0" max="255"
 					onclick="document.getElementById('numgreen').value = document.getElementById('greenrange').value">
-					<input id="numgreen" type="number" name="numgreen" value="127" min="0" max="255"
-					onclick="document.getElementById('greenrange').value = document.getElementById('numgreen').value"> Green
+					<input id="numgreen" class="inpnum" type="number" name="numgreen" value="127" min="0" max="255"
+					onclick="document.getElementById('greenrange').value = document.getElementById('numgreen').value">
 				</div>
 
-				<div class="bluebox">
-					<input id="bluerange" type="range" name="blue" value="127" min="0" max="255"
+				<div class="bluebox box">
+					<input id="bluerange" class="inprange" type="range" name="blue" value="127" min="0" max="255"
 					onclick="document.getElementById('numblue').value = document.getElementById('bluerange').value">
-					<input id="numblue" type="number" name="numblue" value="127" min="0" max="255"
-					onclick="document.getElementById('bluerange').value = document.getElementById('numblue').value"> Blue
+					<input id="numblue" class="inpnum" type="number" name="numblue" value="127" min="0" max="255"
+					onclick="document.getElementById('bluerange').value = document.getElementById('numblue').value">
 				</div>
 
 				<button type = "button" name = "getcolor" onclick="updatecolor()">Get color</button>
 			</form>
 		</div>
+
+		<div class="separador"></div>
 
 		<div id="colorbox"></div>
 

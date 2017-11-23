@@ -7,42 +7,64 @@ button{
   width: 100%;
 }
 
+form{
+  width: 100%;
+}
+
+.inprange{
+  width: 80%;
+}
+
+.inpnum{
+  width: 20%;
+}
+
+.separador{
+  width: 10%;
+  height: 100%;
+  margin: 0;
+  display: inline-block;
+}
+
 .selector{
   position:relative;
   top: 30px;
-  width: 50%;
+  width: 45%;
   height: 100%;
   float: left;
+  display: inline-block;
+}
+
+.box{
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .redbox{
-  padding: 0px;
   background-color: #FF0000;
   border: 5px solid #FF7000;
-  margin: 10px;
 }
 
 .greenbox{
-  padding: 0px;
   background-color: #00FF00;
   border: 5px solid #00FF70;
-  margin: 10px;
 }
 
 .bluebox{
-  padding: 0px;
   background-color: #0000FF;
   border: 5px solid #7000FF;
-  margin: 10px;
 }
+
 .wrapper{
   height: 220px;
 }
 
 #colorbox{
-  width:50%;
+  width:45%;
   height:100%;
   float: right;
+  display:inline-block;
 }
 
 #sizebox{

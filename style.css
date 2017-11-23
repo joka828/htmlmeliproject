@@ -11,6 +11,29 @@ form{
   width: 100%;
 }
 
+body{
+  background-image: url("http://www.girlsco-op.com/wp-content/uploads/2014/01/nxedigitalrainbow.jpg");
+  height: 100%;
+  width: 100%;
+  margin:0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+a{
+  background-color: black;
+  padding: 5px;
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 24px;
+  border-radius: 8px;
+
+}
+
+.navbar{
+  background-color: #FFFFFFFF;
+
+}
+
 .inprange{
   width: 80%;
   height: 100%;

@@ -8,7 +8,7 @@
 
 	<script>
 		$(document).ready( function() {
-			alert(new Date), updatecolor();	
+			updatecolor(), alerttime();
 		});
 
 		function updatecolor() {
@@ -19,6 +19,33 @@
 			
 			$("#colorbox").attr("style", `background-color: rgb(${redvalue}, ${greenvalue}, ${bluevalue})`);
 			console.log("asd");
+		}
+
+		function alerttime(){
+			$.ajax({
+				url:"https://api.timezonedb.com/v2/get-time-zone",
+				data: {
+					key: 'LSYO57WOXUVD', 
+					format: 'json', 
+					by: 'zone', 
+					zone: 'America/Argentina/Buenos_Aires'
+				},
+				type: "GET",
+				dataType: "json"
+
+			})
+				.done(function(json){
+					alert(json.formatted);
+					console.log(json);
+				})
+				
+				.fail(function(xhr, status, errorThrown){
+					alert("failed")
+				})
+
+				.always(function(xhr, status){
+
+				});
 		}
 	</script>
 </head>

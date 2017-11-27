@@ -2,19 +2,21 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="jquery.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+	<script src="jquery-3.2.1.js"></script>
 
 	<script>
-		$(document).ready(){
-			function updatesize() {
-				document.getElementById('sizebox').style.width = document.getElementById('numsize').value + 'px'
-			};
+		$(document).ready( function(){
+			updatesize();
+		});
+
+		function updatesize() {
+			$("#sizebox").attr("style", `width: ${$('#numsize').val()}px`)
+		}
 
 	</script>
-
+</head>
+<body>
  	<nav>
 	  <a href="index.html">Color</a>
 	  <a href="size.html">Size</a>

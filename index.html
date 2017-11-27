@@ -4,6 +4,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 	<script>
 		function updatecolor() {
 			var redvalue = document.getElementById('redrange').value
@@ -11,8 +13,7 @@
 			var bluevalue = document.getElementById('bluerange').value
 
 			document.getElementById('colorbox').style.backgroundColor = 'rgb(' + redvalue + ',' + greenvalue + ',' + bluevalue + ')';
-		};
-
+		}
 	</script>
 
  	<nav>

@@ -4,11 +4,15 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<script>
-		function updatesize() {
-			document.getElementById('sizebox').style.width = document.getElementById('numsize').value + 'px'
-		};
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="jquery.js"></script>
 
+	<script>
+		$(document).ready(){
+			function updatesize() {
+				document.getElementById('sizebox').style.width = document.getElementById('numsize').value + 'px'
+			};
+		}
 	</script>
 
  	<nav>

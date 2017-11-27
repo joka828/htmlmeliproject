@@ -5,14 +5,17 @@
 </head>
 <body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="jquery.js"></script>
 
 	<script>
-		function updatecolor() {
-			var redvalue = document.getElementById('redrange').value
-			var greenvalue = document.getElementById('greenrange').value
-			var bluevalue = document.getElementById('bluerange').value
+		$(document).ready(){
+			function updatecolor() {
+				var redvalue = document.getElementById('redrange').value
+				var greenvalue = document.getElementById('greenrange').value
+				var bluevalue = document.getElementById('bluerange').value
 
-			document.getElementById('colorbox').style.backgroundColor = 'rgb(' + redvalue + ',' + greenvalue + ',' + bluevalue + ')';
+				document.getElementById('colorbox').style.backgroundColor = 'rgb(' + redvalue + ',' + greenvalue + ',' + bluevalue + ')';
+			}
 		}
 	</script>
 

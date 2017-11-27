@@ -2,23 +2,27 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="jquery.js"></script>
+	<script src="jquery-3.2.1.js"></script>
 
 	<script>
-		$(document).ready(){
-			function updatecolor() {
-				var redvalue = document.getElementById('redrange').value
-				var greenvalue = document.getElementById('greenrange').value
-				var bluevalue = document.getElementById('bluerange').value
+		$(document).ready( function() {
+			alert(new Date), updatecolor();	
+		});
 
-				document.getElementById('colorbox').style.backgroundColor = 'rgb(' + redvalue + ',' + greenvalue + ',' + bluevalue + ')';
-			}
+		function updatecolor() {
+			
+			var redvalue = $('#redrange').val()
+			var greenvalue = $('#greenrange').val()
+			var bluevalue = $('#bluerange').val()
+			
+			$("#colorbox").attr("style", `background-color: rgb(${redvalue}, ${greenvalue}, ${bluevalue})`);
+			console.log("asd");
 		}
 	</script>
-
+</head>
+<body>
  	<nav>
 	  <a href="index.html">Color</a>
 	  <a href="size.html">Size</a>
